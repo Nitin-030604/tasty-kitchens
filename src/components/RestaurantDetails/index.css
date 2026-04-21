@@ -1,0 +1,176 @@
+.restaurant-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant-banner-container {
+  background-image: url('https://res.cloudinary.com/drykjbvie/image/upload/v1776014337/Frame_279_jhu2xz.png');
+  background-size: cover;
+  height: 380px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 280px;
+  width: 90%;
+  max-width: 1100px;
+  justify-content: flex-start;
+}
+.banner-image {
+  height: 280px;
+  width: 445px;
+  border-radius: 10px;
+  margin-right: 18px;
+}
+.res-details {
+  display: flex;
+  flex-direction: column;
+}
+.banner-name {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.banner-cuisine {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.banner-location {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+.banner-stats {
+  display: flex;
+  width: 200px;
+}
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+.stat-value-container {
+  display: flex;
+  align-items: center;
+}
+.star-icon {
+  width: 12px;
+  height: 12px;
+  color: #ffffff;
+}
+.stat-value {
+  font-family: 'DM Sans';
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.stat-label {
+  font-family: 'DM Sans';
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0px;
+}
+.vertical-line {
+  border: 1px solid #e2e8f0;
+}
+.rupee-icon {
+  width: 14px;
+  height: 14px;
+  color: #ffffff;
+}
+.loader-container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.food-items-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 90%;
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  .food-items-list {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 575px) {
+  .restaurant-banner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 300px;
+  }
+  .banner-image {
+    height: 240px;
+    width: 300px;
+    border-radius: 100px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 155px;
+  }
+  .banner-name {
+    font-size: 24px;
+  }
+  .banner-cuisine {
+    font-size: 14px;
+  }
+  .banner-location {
+    font-size: 12px;
+  }
+  .banner-stats {
+    display: flex;
+    width: 150px;
+  }
+  .star-icon {
+    width: 10px;
+    height: 10px;
+  }
+  .stat-value {
+    font-size: 12px;
+  }
+  .stat-label {
+    font-size: 12px;
+  }
+  .rupee-icon {
+    width: 12px;
+    height: 12px;
+    color: #ffffff;
+  }
+  .loader-container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .food-items-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 90%;
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,135 @@
+.menu-item {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+.menu-item-image {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.menu-item-details {
+  display: flex;
+  flex-direction: column;
+}
+.menu-item-name {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.cost-container {
+  display: flex;
+  align-items: center;
+}
+.cost {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px;
+}
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+.star-icon {
+  height: 12px;
+  width: 12px;
+  color: #ffcc00 !important;
+  margin-right: 5px;
+}
+.rating-value {
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a1f44;
+  margin: 0px;
+}
+.add-button {
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #ffa412;
+  border-radius: 6px;
+  color: #ffa412;
+  font-family: 'DM Sans';
+  align-self: flex-start;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.quantity-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.inc-dec-button {
+  background-color: transparent;
+  border: 1px solid #445569;
+  color: #445569;
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  outline: none;
+}
+.quantity {
+  color: #445569;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+@media screen and (max-width: 767px) {
+  .menu-item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu-item-image {
+    height: 120px;
+    width: 180px;
+  }
+  .menu-item-name {
+    font-size: 14px;
+  }
+  .cost {
+    font-size: 12px;
+  }
+  .star-icon {
+    height: 10px;
+    width: 10px;
+  }
+  .rating-value {
+    font-size: 12px;
+  }
+  .add-button {
+    margin-top: 8px;
+    padding: 4px;
+    font-size: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    outline: none;
+  }
+  .quantity-container {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .inc-dec-button {
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  .quantity {
+    font-size: 12px;
+  }
+}

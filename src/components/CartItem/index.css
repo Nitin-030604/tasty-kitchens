@@ -1,0 +1,127 @@
+.cart-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.mobile-cart-item {
+  display: none;
+}
+.img-name-container {
+  display: flex;
+  align-items: center;
+  width: 33.33%;
+}
+.cart-item-image {
+  width: 136px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+.cart-item-name {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(24, 59, 86, 1);
+}
+.cart-quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-inc-dec-button {
+  background-color: transparent;
+  border: 1px solid #445569;
+  color: #445569;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+  outline: none;
+}
+.cart-item-quantity {
+  color: rgba(71, 85, 105, 1);
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-weight: 500;
+  width: 33.33%;
+  text-align: center;
+}
+.price {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.rupee-icon {
+  margin: 0px;
+}
+.cart-item-price {
+  font-family: 'DM-Sans';
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffa412;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .cart-item {
+    display: none;
+  }
+  .mobile-cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    margin-bottom: 16px;
+  }
+  .mobile-cart-item-image {
+    width: 136px;
+    height: 90px;
+    border-radius: 8px;
+    margin-right: 8px;
+  }
+  .mobile-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 92px;
+  }
+  .mobile-cart-item-name {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(24, 59, 86, 1);
+    margin: 0px;
+  }
+  .mobile-cart-quantity-container {
+    display: flex;
+    align-items: center;
+    width: 74px;
+    justify-content: space-between;
+    margin: 0px;
+  }
+  .mobile-cart-inc-dec-button {
+    background-color: transparent;
+    border: 1px solid #445569;
+    color: #445569;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    margin: 0px;
+  }
+  .mobile-price {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+  }
+  .mobile-cart-item-price {
+    font-family: 'DM-Sans';
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffa412;
+    text-align: center;
+    margin: 0px;
+  }
+}

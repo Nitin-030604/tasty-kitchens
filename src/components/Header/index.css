@@ -1,0 +1,144 @@
+.nav-header {
+  background-color: #f8fafc;
+  height: 96px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  height: 100%;
+}
+.logo-link {
+  text-decoration: none;
+}
+.logo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.website-logo {
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 575px) {
+  .website-logo {
+    height: 34px;
+    width: 34px;
+  }
+}
+.website-name {
+  color: #f7931e;
+  font-size: 28px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-style: italic;
+}
+@media screen and (max-width: 575px) {
+  .website-name {
+    font-size: 20px;
+  }
+}
+.menu {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+}
+.nav-item {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'DM Sans';
+  font-size: 18px;
+  font-weight: 700;
+  color: #334155;
+}
+.active-nav-item {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'DM Sans';
+  font-size: 18px;
+  font-weight: 700;
+  color: #f7931e;
+}
+.logout-btn {
+  height: 32px;
+  width: 73px;
+  background-color: #f7931e;
+  padding: 8px 16px 8px 16px;
+  color: #ffffff;
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-weight: 700;
+  align-self: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+@media screen and (max-width: 767px) {
+  .logout-btn {
+    margin-left: 10px;
+  }
+}
+.hamburger-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
+}
+.mobile-menu-popup {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu-popup {
+    display: none;
+  }
+}
+.mobile-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0px;
+}
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-self: center;
+}
