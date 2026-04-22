@@ -16,10 +16,11 @@
 .content {
   display: flex;
   flex-direction: row;
-  height: 280px;
+  height: 100%;
   width: 90%;
   max-width: 1100px;
   justify-content: flex-start;
+  align-items: center;
 }
 .banner-image {
   height: 280px;
@@ -108,31 +109,105 @@
 }
 @media screen and (max-width: 767px) {
   .food-items-list {
+    flex-direction: row;
+  }
+  .banner-image {
+    height: 220px;
+    width: 400px;
+    border-radius: 10px;
+    margin-right: 18px;
+  }
+  .res-details {
+    display: flex;
     flex-direction: column;
+  }
+  .banner-name {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 0px;
+  }
+  .banner-cuisine {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+    margin-bottom: 0px;
+  }
+  .banner-location {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .banner-stats {
+    display: flex;
+    width: 150px;
+  }
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .stat-value-container {
+    display: flex;
+    align-items: center;
+  }
+  .star-icon {
+    width: 10px;
+    height: 10px;
+    color: #ffffff;
+  }
+  .stat-value {
+    font-family: 'DM Sans';
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .stat-label {
+    font-family: 'DM Sans';
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 0px;
+  }
+  .vertical-line {
+    border: 1px solid #e2e8f0;
+  }
+  .rupee-icon {
+    width: 12px;
+    height: 12px;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 575px) {
   .restaurant-banner-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-start !important;
     justify-content: flex-start;
     height: 300px;
   }
+  .content {
+    align-items: flex-start;
+  }
   .banner-image {
-    height: 240px;
-    width: 300px;
+    height: 220px;
+    width: 260px;
     border-radius: 100px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 155px;
   }
+  .res-details {
+    margin-top: 20px;
+  }
   .banner-name {
-    font-size: 24px;
+    font-size: 18px;
   }
   .banner-cuisine {
-    font-size: 14px;
+    font-size: 10px;
   }
   .banner-location {
     font-size: 12px;
@@ -142,14 +217,14 @@
     width: 150px;
   }
   .star-icon {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
   }
   .stat-value {
-    font-size: 12px;
+    font-size: 10px;
   }
   .stat-label {
-    font-size: 12px;
+    font-size: 10px;
   }
   .rupee-icon {
     width: 12px;

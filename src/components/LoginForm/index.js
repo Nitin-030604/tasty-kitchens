@@ -92,6 +92,11 @@ class LoginForm extends Component {
     }
     return (
       <div className="main-container">
+        <img
+          src="https://res.cloudinary.com/drykjbvie/image/upload/v1774842520/Rectangle_1456_stzuf1.png"
+          className="mobile-img"
+          alt="website login"
+        />
         <div className="login-form-container">
           <form className="form-container" onSubmit={this.onSubmitForm}>
             <img

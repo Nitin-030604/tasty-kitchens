@@ -15,8 +15,8 @@
   margin-top: 10px;
 }
 .restaurant-img {
-  width: 160px;
-  height: 100px;
+  width: 160px !important;
+  height: 100px !important;
   border-radius: 8px;
   margin-right: 16px;
 }
@@ -69,14 +69,22 @@
 @media screen and (max-width: 767px) {
   .restaurant-list-item {
     width: 100%;
+    display: flex;
+    align-items: flex-start;
   }
-}
-@media screen and (max-width: 420px) {
+  .restaurant-img {
+    width: 120px !important;
+    height: 80px !important;
+    flex-shrink: 0;
+    border-radius: 8px;
+    margin-right: 16px;
+  }
   .restaurant-heading {
     font-size: 12px;
   }
-  .restaurant-details{
-    width: 100%;
+  .restaurant-details {
+    width: auto;
+    flex-grow: 1;
   }
   .cuisine {
     font-size: 12px;

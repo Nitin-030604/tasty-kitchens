@@ -58,10 +58,12 @@ body {
   flex-direction: row;
   align-items: center;
 }
-.icon {
+.filter-icon {
   width: 20px;
   height: 20px;
   margin-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .sort-by {
   font-family: 'DM Sans';

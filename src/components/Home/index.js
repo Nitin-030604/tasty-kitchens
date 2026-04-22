@@ -137,7 +137,7 @@ class Home extends Component {
                     day happy...
                   </p>
                   <div className="filter-container">
-                    <BsFilterLeft className="icon" />
+                    <BsFilterLeft className="filter-icon" />
                     <p className="sort-by">Sort By</p>
                     <select
                       className="sort-select"

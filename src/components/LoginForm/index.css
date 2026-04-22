@@ -9,9 +9,6 @@
   align-items: center;
   height: 100vh;
   width: 50vw;
-  @media screen and (max-width: 767px) {
-    width: 100vw;
-  }
 }
 .form-container {
   display: flex;
@@ -25,22 +22,10 @@
   padding-left: 20px;
   padding-right: 20px;
   width: 70%;
-  @media screen and (max-width: 767px) {
-    width: 100%;
-    min-height: 100vh;
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-  }
 }
 .login-icon {
   height: 32px;
   width: 36px;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
 }
 .heading {
   color: #f7931e;
@@ -49,9 +34,6 @@
   font-weight: 700;
   margin-top: 4px;
   font-style: italic;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
 }
 .login-heading {
   color: #0f172a;
@@ -67,9 +49,6 @@
   width: 90%;
   margin-top: 10px;
   margin-bottom: 10px;
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
 }
 .label {
   font-family: 'DM Sans';
@@ -111,9 +90,6 @@
   width: 90%;
   height: 36px;
   margin-top: 20px;
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
 }
 .error-msg {
   font-family: 'DM Sans';
@@ -132,7 +108,67 @@
   left: 50vw;
   top: 0px;
   background: #c4c4c4;
-  @media screen and (max-width: 767px) {
+}
+.mobile-img {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  .login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100vw;
+  }
+  .form-container {
+    width: 100%;
+    height: 40vh;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .login-icon {
     display: none;
+  }
+  .heading {
+    display: none;
+  }
+  .input-container {
+    width: 100%;
+  }
+  .login-btn {
+    width: 100%;
+  }
+  .img {
+    display: none;
+  }
+  .mobile-img {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    border-bottom-left-radius: 386px;
+    border-top-left-radius: 0px;
+  }
+}
+@media screen and (max-width: 575px){
+  .mobile-img{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 0px;
+  }
+  .form-container{
+    height: 50vh;
+  }
+  .login-form-container{
+    height: 50vh;
   }
 }
