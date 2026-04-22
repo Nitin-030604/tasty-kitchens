@@ -120,6 +120,7 @@
   .res-details {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
   .banner-name {
     font-family: 'Roboto';
@@ -193,7 +194,7 @@
   }
   .banner-image {
     height: 220px;
-    width: 260px;
+    width: 210px;
     border-radius: 100px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
